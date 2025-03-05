@@ -105,9 +105,10 @@ button{
 .search-account-container .account-container{
     grid-column: 3 / 4;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
+    grid-template-columns: 30px 30px 100px;
+    gap: 1.5rem;
     align-items: center;
-    justify-items: end;
+    justify-content: end;
     margin-right: 100px;
 }
 
@@ -121,6 +122,12 @@ button{
 .pfp-greet-acc{
     display: grid;
     grid-template-columns: 100px 1fr;
+    align-items: center;
+}
+
+.acc-name{
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .nav-buttons{
@@ -158,7 +165,7 @@ button{
 
 .card{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     background-color: rgb(255, 255, 255);
     height: 100%;
     width: 100%;
@@ -191,15 +198,20 @@ button{
 .sidebar-container{
     background-color: rgb(255, 255, 255);
     display: flex;
-    padding: 20px;
-    flex-direction: column;
     flex-wrap: wrap;
+    gap: 1rem;
+    padding: 20px;
     
 }
 
 .sidebar-container-text{
-    border-bottom: 1px solid black;
+    
     font-size: 0.8rem;
+}
+
+.sidebar-container-text-header{
+    font-weight: bold;
+    font-size: 0.9rem;
 }
 
 .trending-container{
@@ -212,4 +224,16 @@ button{
 .icon{
     max-width: 30px;
     max-height: 30px;
+}
+
+.pfp1{
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+}
+
+.pfp2{
+    height: 100%;
+    width: 75%;
+    border-radius: 50%;
 }
