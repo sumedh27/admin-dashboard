@@ -4,6 +4,10 @@
     font-family: 'Roboto';
 }
 
+button{
+    cursor: pointer;
+}
+
 .container{
     display: grid;
     grid-template-columns: 1fr 6fr;
@@ -13,10 +17,53 @@
 
 .dashboard-container{
     background-color: rgb(147, 130, 247);
-    display: grid;
-    grid-template-rows: 100px 1fr 1fr;
-    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 10px 30px 0 15px;
 }
+
+.dashboard-btn{
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    gap: 1rem;
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.page-nav,
+.settings-nav{
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-btn,
+.settings-nav-btn{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.nav-btn{
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.nav-btn img{
+    height: 70%;
+}
+
+
 
 .header-content-container{
     display: grid;
