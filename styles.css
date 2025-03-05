@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto';
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    width: 100vw;
+    height: 100vh;
+}
+
+.dashboard-container{
+    background-color: rgb(147, 130, 247);
+    display: grid;
+    grid-template-rows: 100px 1fr 1fr;
+    gap: 2rem;
+}
+
+.header-content-container{
+    display: grid;
+}
+
+.header{
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    background-color: #FFFF;
+    
+}
+
+.search-account-container{
+    display: grid;
+    grid-template-columns: 1fr 100px 1fr;
+    align-items: center;
+    gap: 2rem;
+}
+
+.search-account-container .search-container{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    justify-items: center;
+    align-items: center;
+    margin-left: 30px;
+    gap: 10px;
+}
+
+.search-bar{
+    width: 500px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: #ecf0f1  ;
+    border-color: #ecf0f1 ;
+}
+
+.search-account-container .account-container{
+    grid-column: 3 / 4;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
+    align-items: center;
+    justify-items: end;
+    margin-right: 100px;
+}
+
+.acc-nav{
+    margin-left: 30px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    align-items: center;
+}
+
+.pfp-greet-acc{
+    display: grid;
+    grid-template-columns: 100px 1fr;
+}
+
+.nav-buttons{
+    grid-column: 3 / 4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+    margin-right: 100px;
+}
+
+.content-container{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    background-color: #eaeded;
+    box-shadow: inset 0px 15px 10px -15px #6d6d6d;   
+}
+
+.content-projects{
+    display: grid;
+    grid-template-rows: 15px 1fr;
+    gap: 1rem;
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.card{
+    
+    background-color: beige;
+    height: 150px;
+    width: 300px;;
+    margin-bottom: 10px;
+}
+
+.sidebar{
+    background-color: #eaeded;
+    display: grid;
+    grid-template-rows: 20px 1fr 20px 1fr;
+    justify-content: start;
+    padding-left: 20px;
+    gap: 5px;
+    box-shadow: inset 0px 15px 10px -15px #6d6d6d;   
+
+}
+
+.sidebar-container{
+    background-color: blueviolet;
+    height: 200px;
+    width: 100px;
+}
+
+.icon{
+    max-width: 30px;
+    max-height: 30px;
+}
