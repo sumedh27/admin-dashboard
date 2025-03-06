@@ -51,7 +51,8 @@ button{
     font-weight: bold;
 }
 
-.nav-btn{
+.nav-btn,
+.card-buttons button{
     background: none;
     border: none;
     outline: none;
@@ -135,7 +136,14 @@ button{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 3rem;
-    margin-right: 100px;
+}
+
+.nav-buttons button{
+    background-color: rgb(119, 119, 228);
+    color: white;
+    height: 50px;
+    width: 100px;
+    border-radius: 20px;
 }
 
 .header-content-container .content-container{
@@ -147,78 +155,135 @@ button{
 }
 
 
-
-.card-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    padding: 20px;
-    align-content: center;
-}
-
-.card-header{
-    grid-column: 1 / 3;
-    font-weight: bold;
-    font-size: 20px;
-    margin-bottom: -2rem;
-}
-
-.card{
-    display: flex;
-    flex-wrap: wrap;
-    background-color: rgb(255, 255, 255);
-    height: 100%;
-    width: 100%;
-    padding: 10px;
-    
-}
-
-.card-txt{
-    font-size: 0.9rem;
-    line-height: 1rem;
-}
-
-
 .sidebar{
     grid-column: 2 / 3;
     background-color: #eaeded;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    gap: 10px;
+    display: grid;
+    grid-template-rows: 10px 1fr 10px 1fr;
+    row-gap: 2rem;
     padding: 20px;
     box-shadow: inset 0px 15px 10px -15px #6d6d6d;   
 }
 
-.sidebar-text{
-    font-weight: bold;
-    font-size: 20px;
+.card-container{
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0px 1fr 1fr 1fr;
+    gap: 2rem;
 }
 
-.sidebar-container{
-    background-color: rgb(255, 255, 255);
+.card-header{
+    grid-column: 1 / 3;
+    
+}
+
+.card{
+    background-color: #FFFF;
+    padding: 22px;
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
-    padding: 20px;
-    
+    box-shadow: 0px 18px 18px 0px #6d6d6d,-5px 0px 0px 0px #515151;
+
 }
 
-.sidebar-container-text{
-    
-    font-size: 0.8rem;
-}
-
-.sidebar-container-text-header{
+.card-content{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1rem;
+    line-height: 1.2;
     font-weight: bold;
-    font-size: 0.9rem;
 }
 
-.trending-container{
-    background-color: rgb(255, 255, 255);
+.card-content .card-txt{
+    font-size: 0.8rem;
+    font-weight: initial;
+}
+
+.card-buttons{
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    gap: 2.5rem;
+    justify-content: end;
+}
+
+.card-buttons img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.card-buttons button{
+    max-width: 20px;
+    max-height: 20px;
+}
+
+
+.announcements-card{
+    background-color: #FFFF;
     display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1rem;
+    line-height: 1.2;
+    font-size: 0.8rem;
     padding: 20px;
+    box-shadow: 0px 18px 18px 0px #6d6d6d,-5px 0px 0px 0px #515151;
+}
+
+.announcements-text{
+    grid-row: 1 / 2;
+}
+
+.announcements-text,
+.card-header,
+.trending-text{
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.announcements-container-text-header{
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+
+}
+
+.trending-card{
+    background-color: #FFFF;
+    display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    padding: 15px;
+    line-height: 1.3;
+    align-items: center;
+    box-shadow: 0px 18px 18px 0px #6d6d6d,-5px 0px 0px 0px #515151;
+}
+
+.t1,
+.t2,
+.t3,
+.t4{
+    display: grid;
+    grid-template-columns: 50px 1fr ;
+}
+
+.pfpt{
+    grid-column: 1 / 2;
+}
+
+.trending-card p    {
+    grid-column: 2 / 3;
+}
+
+.trending-content{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.trending-card img{
+    height: 100%;
+    width: 100%;
 }
 
 .icon{
